@@ -1,257 +1,180 @@
-/**
- * THEMES.DARK
- */
-/* Body */
-body {
-  background: #2c3348;
-  color: #979899;
+:root {
+  --graphite: #303637;
+  --titanium: #444b4c;
+  --aluminum: #e6e9e8;
+  --silver: #f3f4f1;
+  --ink: #394143;
+  --copper: #94654f;
+  --line: #bbc1bf;
 }
 
-/* Heading */
+body {
+  background: var(--aluminum);
+  color: var(--ink);
+}
+
 h1,
 h2,
 h3,
 h4,
 h5,
 h6 {
-  color: #a4a5a6;
+  color: var(--ink);
 }
 
-/* Link Container */
-.t-link-container {
-  color: inherit;
-  display: block;
+a {
+  color: var(--copper);
 }
 
-.t-link-container:hover,
-.t-link-container:focus,
-.t-link-container:active {
-  color: #e0a80d;
-}
-
-.t-link-container .t-link-container__item--blended {
-  color: inherit;
-}
-
-/* Links */
-a,
-.t-link-container .t-link-container__item,
-.t-link-container:hover .t-link-container__item--blended {
-  color: #e0a80d;
-}
-
-/* Hover Links */
 a:hover,
-a:focus,
-a:active,
-.t-link-container:hover .t-link-container__item {
-  color: #fefaee;
+a:focus {
+  color: var(--graphite);
 }
 
-ul {
-    margin-left: 1.5em;
-}
-
-/* Horizontal Rulers */
 hr,
 .t-border-color {
-  border-color: #454c61;
+  border-color: var(--line);
 }
 
 hr,
 .t-border-color-bg {
-  background: #454c61;
+  background: var(--line);
 }
 
-/* Primary Color */
 .t-primary-color,
 .t-primary-color-line {
-  color: #e0a80d;
-}
-
-.t-primary-color .fas,
-.t-primary-color .far,
-.t-primary-color .fal,
-.t-primary-color .fab {
-  color: #e0a80d;
+  color: var(--copper);
 }
 
 .t-primary-bg,
 .t-primary-color-line {
-  background: #e0a80d;
+  background: var(--copper);
 }
 
-.t-teritiary-color {
-  opacity: 0.6;
-}
-
-.project-title {
-  font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 600;
-  font-size: 1.2rem;
-  line-height: 1.45;
-  /* opacity: 0.8; */
-  text-transform: none;
-}
-
-.project-technologies {
-  /* font-family: Lato, "Helvetica Neue", Helvetica, Arial, sans-serif; */
-  font-weight: 500;
-  font-style: italic;
-  font-size: 0.9rem;
-  opacity: 0.6;
-  /* line-height: 1.45; */
-  /* text-transform: none; */
-}
-
-/* Preloader */
 .t-preloader__spinner:not(:required):before {
-  border-top-color: #e0a80d;
-  border-bottom-color: #e0a80d;
+  border-top-color: var(--copper);
+  border-bottom-color: var(--copper);
 }
 
-/* Brand Colors */
-.t-title__first-word {
-  color: #a4a5a6;
-}
-
-.t-title__second-word {
-  color: #e0a80d;
-}
-
-.t-sub-title {
-  color: #979899;
-}
-
-/* Brand Typography */
 .t-title {
   font-size: 4.8rem;
   line-height: 0.91;
 }
 
 .t-title__first-word {
+  color: var(--graphite);
   text-transform: uppercase;
   font-weight: 300;
 }
 
 .t-title__second-word {
-  text-transform: uppercase !important;
+  color: var(--copper);
+  text-transform: none;
   font-weight: 700;
+  overflow-wrap: anywhere;
 }
 
 .t-sub-title {
+  color: #606969;
   font-weight: 300;
   font-size: 1.5rem;
-  margin-left: .3rem;
 }
 
-/* Icons */
-.fas,
-.far,
-.fal,
-.fab {
-  color: #575859;
-}
-
-/* Social Buttons */
-.t-social-button {
-  background: #384058;
-  border-color: #384058;
-}
-
-.t-social-button .fas,
-.t-social-button .far,
-.t-social-button .fal,
-.t-social-button .fab {
-  color: #a4a5a6;
-}
-
-.t-social-button:hover {
-  background: #2c3348;
-}
-
-.t-social-button:hover .fas,
-.t-social-button:hover .far,
-.t-social-button:hover .fal,
-.t-social-button:hover .fab {
-  color: #e0a80d;
-}
-
-/* Image Overlay */
-.t-image-overlay {
-  background: #2d2e2e;
-}
-
-.t-image-overlay * {
-  color: #e4e5e5;
-}
-
-.t-image-overlay:hover img {
-  opacity: 0.4;
-}
-
-.t-image-overlay__deco-line {
-  color: #c0c1c1;
-  background: #c0c1c1;
-}
-
-/* Transition */
-a,
-button,
-a .fa,
-.t-link-container .t-link-container__item,
-.t-link-container .t-link-container__item--blended {
-  transition: all .15s linear;
-}
-
-/* Sections */
 .t-section__header {
-  background: #23293c;
+  background: var(--graphite);
 }
 
-.t-section__content,
+.t-section__header .o-section__heading {
+  color: var(--silver);
+}
+
+.t-section__content {
+  background: var(--silver);
+}
+
 .t-section--header .t-section__header {
-  background: #2c3348;
+  background: var(--graphite);
 }
 
-.t-section__content-border-color {
-  border-color: #2d2e2e;
+.c-header__mark {
+  font-size: 4rem;
+  font-weight: 900;
+  color: #d6dad7;
+  letter-spacing: 0;
+  text-align: center;
+  padding: 1.25rem 0;
+  border-top: 1px solid #717a79;
+  border-bottom: 1px solid #717a79;
+  background: linear-gradient(120deg, #aeb6b3, #f2f3ec 48%, #899392);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.t-timeline__point {
-  box-shadow: 0 0 0 6px #2c3348;
+.c-header__domain,
+.c-photos__note {
+  margin-bottom: 1.75rem;
+}
+
+.c-footer__signature {
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--copper);
+}
+
+.c-footer__domain {
+  color: #606969;
 }
 
 @media (max-width: 1023px) {
   .t-section__header {
-    border-top: 1px solid #454c61;
-    border-bottom: 1px solid #454c61;
+    border-top: 1px solid #525b5b;
   }
+
   .t-section--header .t-section__header {
     border-top: none;
-    border-bottom: none;
+  }
+
+  .c-header__mark {
+    font-size: 2.5rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .c-footer__domain {
+    position: absolute;
+    right: 0;
+    bottom: 0;
   }
 }
 
 @media (min-width: 1024px) {
-  /* Odd Sections */
   .t-section,
   .t-section__header,
   .t-section--header .t-section__header {
-    background: #252b3c;
+    background: var(--graphite);
   }
+
   .t-section__content {
-    background: #2c3348;
+    background: var(--silver);
   }
-  /* Even Sections */
+
   .t-section:nth-child(even),
   .t-section:nth-child(even) .t-section__header {
-    background: #212738;
+    background: var(--titanium);
   }
+
   .t-section:nth-child(even) .t-section__content {
-    background: #252b3d;
+    background: var(--aluminum);
   }
-  .t-section:nth-child(even) .t-timeline__point {
-    box-shadow: 0 0 0 6px #252b3d;
+
+  .c-header__header,
+  .c-header__content {
+    height: 78vh;
+    min-height: 480px;
+  }
+
+  .c-header__mark {
+    text-align: right;
   }
 }
