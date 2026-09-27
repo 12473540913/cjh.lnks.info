@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="refresh" content="0; url=index.html#photography">
+        <meta name="description" content="Photography | Cameron Hirsh">
+        <title>Photography | Cameron Hirsh</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/plugins/font-awesome/css/fontawesome.min.css">
+        <link rel="stylesheet" href="assets/plugins/font-awesome/css/solid.min.css">
+        <link rel="stylesheet" href="assets/plugins/nivo-lightbox/nivo-lightbox.css">
+        <link rel="stylesheet" href="assets/plugins/nivo-lightbox/themes/default/default.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+        <link rel="stylesheet" href="assets/css/themes.dark.css">
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/dense.js"></script>
+        <script src="assets/plugins/nivo-lightbox/nivo-lightbox.min.js"></script>
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </head>
+
+    <body>
+        <p><a href="index.html#photography">View the photos on the main page.</a></p>
+        <!-- The standalone gallery is retired; photos now appear on the main page.
+        <div class="c-preloader  js-preloader">
+            <div class="c-preloader__spinner  t-preloader__spinner"></div>
+        </div>
+
+        <main class="c-main-container  js-main-container">
+            <header class="c-gallery__header">
+                <div class="c-gallery__header-inner">
+                    <a href="index.html" class="a-header  c-gallery__back" data-page-transition aria-label="Back to main page" title="Back to main page">
+                        <i class="fas fa-arrow-left" aria-hidden="true"></i>
+                    </a>
+                    <h1 class="a-header  c-gallery__title">Photo Gallery</h1>
+                </div>
+            </header>
+
+            <div class="c-gallery__body">
+                <div class="c-gallery__grid">
+                </div>
+                <hr class="c-gallery__divider">
+            </div>
+        </main>
+        <script>
+            (function() {
+                var gallery = document.querySelector('.c-gallery__grid');
+                var photoNumber = 1;
+
+                function loadNextPhoto() {
+                    var source = 'assets/images/gallery/' + photoNumber + '.jpg';
+                    var image = new Image();
+
+                    image.onload = function() {
+                        var figure = document.createElement('figure');
+                        var link = document.createElement('a');
+
+                        figure.className = 'a-gallery  c-gallery__photo';
+                        link.className = 'js-lightbox';
+                        link.href = source;
+                        link.setAttribute('data-lightbox-gallery', 'portfolio');
+                        image.alt = 'Photo ' + photoNumber;
+                        image.width = 1800;
+                        image.height = 1200;
+                        image.loading = 'lazy';
+
+                        link.appendChild(image);
+                        figure.appendChild(link);
+                        gallery.appendChild(figure);
+
+                        photoNumber++;
+                        loadNextPhoto();
+                    };
+
+                    image.onerror = function() {
+                        setup_nivo_lightbox();
+                    };
+
+                    image.src = source;
+                }
+
+                loadNextPhoto();
+            })();
+        </script>
+        -->
+    </body>
+</html>
