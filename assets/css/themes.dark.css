@@ -280,7 +280,7 @@ hr,
 .c-work__heading a:visited,
 .c-work__heading a:hover,
 .c-work__heading a:focus {
-  color: var(--ink);
+  color: var(--copper);
   text-decoration: none;
 }
 
