@@ -321,6 +321,37 @@ hr,
     border-top: none;
   }
 
+  .o-section--header .o-section__container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .c-header__header {
+    padding-bottom: 1.75rem;
+  }
+
+  .c-header__content,
+  .c-header__inner-content,
+  .c-header__top,
+  .c-header__contact {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .c-header__top {
+    justify-content: center;
+    margin-bottom: 1.75rem;
+  }
+
+  .c-header__brand {
+    margin-bottom: 0;
+  }
+
+  .c-header__social-buttons {
+    margin-top: .75rem;
+  }
+
   .c-header__mark {
     width: 5rem;
     height: 5rem;
@@ -328,6 +359,8 @@ hr,
 
   .c-header__details {
     grid-template-columns: minmax(0, 1fr);
+    align-content: space-evenly;
+    flex: 1;
   }
 
 }
