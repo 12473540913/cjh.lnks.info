@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <title>Radial star network</title>
+  <g stroke="#858C89" stroke-width="2.6" stroke-linecap="round">
+    <path d="M32 8V56M8 32H56M15 15L49 49M49 15L15 49"/>
+  </g>
+  <circle cx="32" cy="32" r="6.2" fill="none" stroke="#858C89" stroke-width="2.8"/>
+  <g fill="#858C89">
+    <circle cx="32" cy="8" r="3"/>
+    <circle cx="32" cy="56" r="3"/>
+    <circle cx="8" cy="32" r="3"/>
+    <circle cx="56" cy="32" r="3"/>
+  </g>
+</svg>
