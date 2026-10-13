@@ -41,7 +41,7 @@ function setup_home_gallery()
 
     function load_next_photo()
     {
-        var source = 'assets/images/gallery/' + photo_number + '.jpg';
+        var source = 'assets/images/' + photo_number + '.jpg';
         var image = new Image();
 
         image.onload = function() {
