@@ -3,8 +3,6 @@
 
 $(document).ready(function() {
 
-    $('html').addClass('js-enabled');
-
     setup_home_gallery();
     setup_nivo_lightbox();
     setup_dense();
