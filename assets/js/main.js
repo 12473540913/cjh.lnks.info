@@ -16,7 +16,7 @@ $(document).ready(function() {
     });
 
     $(window).load(function() {
-        $(".js-preloader").delay(1500).fadeOut(800, function() {
+        $(".js-preloader").delay(2500).fadeOut(800, function() {
             $(".js-main-container").fadeIn(800);
 
             setup_scrollreveal();
